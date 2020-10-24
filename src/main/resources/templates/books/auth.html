@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Auth List</h1>
+
+<table style="background: crimson">
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>Publisher num</th>
+    </tr>
+    <tr th:each="a : ${A}">
+        <td th:text="${a.id}">123</td>
+        <td th:text="${a.firstName}"> Spring in Action</td>
+        <td th:text="${a.books.size()}">Wrox</td>
+    </tr>
+</table>
+</body>
+</html>

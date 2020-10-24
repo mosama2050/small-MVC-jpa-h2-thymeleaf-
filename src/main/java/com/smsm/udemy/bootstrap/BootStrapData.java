@@ -28,6 +28,7 @@ public class BootStrapData implements CommandLineRunner {
         System.out.println("Started in Bootstrap");
 
         Publisher publisher = new Publisher();
+        publisher.setAddressLine1("khirbta");
         publisher.setName("SFG Publishing");
         publisher.setCity("St Petersburg");
         publisher.setState("FL");
